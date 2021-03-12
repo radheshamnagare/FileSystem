@@ -2,7 +2,7 @@
 
 
 To understanding working of file system that's all this project .i tried do some sort of operation like copy,paste,delete,lists the files. overall working
-of project is in c language and some linux system calls that's project support for linux operating system.
+of project is in c language and some linux system calls that's project support for linux operating system.whatever i did that all baby step.
 
 working -
  we all know that the actual file system or operating system handles so many complex tasks like memory management,resource managment and all .if we considering
@@ -32,3 +32,69 @@ Scenario 2 :
 Scenario 3: if file size is very less compaire to block size then we can store unother files in remaing space.
 
 ![alt text](https://github.com/radheshamnagare/FileSystem/blob/11a7d5284471a989c7f4c022254704188623c90e/Screenshot%20from%202021-03-12%2014-11-06.png)
+
+
+now ,the disk.tesage is vertual disk and that's store onley binary data of files.
+our task is -
+ 1- file size is random we dont know how long file
+ 2- between the copy/paste/deleted operation we want to hanle so much error
+ 3- we want to use vertual memory appropiately .
+ 4- memory management
+ 
+ 
+ *file size is random :
+     we don't have idea how file long ,and we want copy file in disk then what's happens before copy the file.
+     -first we want to check that much space is empty to save file in disk .
+     -after that we coping file in disk and during the copy we may face some error that's we want to handle it..
+     -after file copy successfuly we want to check it is copy data is correct compare to original file ,so some automation is needs here.
+     
+*between the copy/paste/deleted operation we want to hanle so much error :
+ all of operation we want to perform carefully because each bit is important and the blocks are just logicaly representaion .so all of data is mix togeter that's
+ when we copy/paste of various types file we may get wrong information also .
+ 
+ *we want to use vertual memory appropiately  :
+   we want to used that much memory what ever vertual memory size .sometime user tried to copy very big file also and that not issue but that much space is available or not that's need to check.
+   
+ *memory management :
+  what ever you delete files from vertual disk ,that much space space we want to reuse it.also all operation perform we need some memory and we want use minimum
+  memory .so that problem solution we have own memory allowcator and  that allowcator have some preserve memory and use it in our code.
+  
+ 
+  File mode bits:
+
+S_IRWXU :
+read, write, execute/search by owner;
+S_IRUSR:
+read permission, owner;
+S_IWUSR:
+write permission, owner;
+S_IXUSR:
+execute/search permission, owner;
+S_IRWXG:
+read, write, execute/search by group;
+S_IRGRP:
+read permission, group;
+S_IWGRP:
+write permission, group;
+S_IXGRP:
+execute/search permission, group;
+S_IRWXO:
+read, write, execute/search by others;
+S_IROTH:
+read permission, others;
+S_IWOTH:
+write permission, others;
+S_IXOTH:
+execute/search permission, others;
+S_ISUID:
+set-user-ID on execution;
+S_ISGID:
+set-group-ID on execution;
+S_ISVTX:
+on directories, restricted deletion flag;
+
+
+these are flag use in open() system call when we tried to create file .these flags manages all of permition of file.some of i used in code.
+  
+   
+ 
