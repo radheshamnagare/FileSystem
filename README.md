@@ -21,13 +21,14 @@ Scenario 1:
 Scenario 2 :
   we deleted file2 from the disk now if we want save new file in a disk then we search first in betwwen empty spaceif it find then we can start to save file in scattered manner .
   
-  ![alt text]()
+  ![alt text](https://github.com/radheshamnagare/FileSystem/blob/11a7d5284471a989c7f4c022254704188623c90e/Screenshot%20from%202021-03-12%2014-04-00.png)
   
   if it is possible we replace the data of file4 in place file2
   
-  ![alt text]()
+  ![alt text](https://github.com/radheshamnagare/FileSystem/blob/11a7d5284471a989c7f4c022254704188623c90e/Screenshot%20from%202021-03-12%2014-08-23.png
+)
   
   
 Scenario 3: if file size is very less compaire to block size then we can store unother files in remaing space.
 
-![alt text]()
+![alt text](https://github.com/radheshamnagare/FileSystem/blob/11a7d5284471a989c7f4c022254704188623c90e/Screenshot%20from%202021-03-12%2014-11-06.png)
