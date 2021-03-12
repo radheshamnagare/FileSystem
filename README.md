@@ -10,4 +10,3 @@ working -
  the real file system do realy complex task but that not point to elabrate here .but as we know files are stored in scaters manner that's posible using some
  technics/algorithms.
  
- ![alt text](https://drive.google.com/drive/folders/1LNuJNEk_5n28eTMrlwuX4_-H-MCQQ8Ft?usp=sharing)
