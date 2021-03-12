@@ -11,9 +11,23 @@ working -
  algorithms working.
  
  let's consider following daigrams:
- Scenario 1:
+
+Scenario 1:
  
  ![alt text](https://github.com/radheshamnagare/FileSystem/blob/adb49f70d3c5c33cd22338eb83df8e80d8ab5898/Screenshot%20from%202021-03-12%2013-14-43.png)
  
  this is a scanario disk has empty and we just perform write operation sequencialy .the files stores sequencialy we can access this files very easily.
  
+Scenario 2 :
+  we deleted file2 from the disk now if we want save new file in a disk then we search first in betwwen empty spaceif it find then we can start to save file in scattered manner .
+  
+  ![alt text]()
+  
+  if it is possible we replace the data of file4 in place file2
+  
+  ![alt text]()
+  
+  
+Scenario 3: if file size is very less compaire to block size then we can store unother files in remaing space.
+
+![alt text]()
