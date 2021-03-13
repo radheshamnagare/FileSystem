@@ -48,7 +48,7 @@ our task is -
      -after that we coping file in disk and during the copy we may face some error that's we want to handle it..
      -after file copy successfuly we want to check it is copy data is correct compare to original file ,so some automation is needs here.
      
-*between the copy/paste/deleted operation we want to hanle so much error :
+*between the copy/paste/deleted operation we want to handle so much error :
  all of operation we want to perform carefully because each bit is important and the blocks are just logicaly representaion .so all of data is mix togeter that's
  when we copy/paste of various types file we may get wrong information also .
  
@@ -97,4 +97,14 @@ on directories, restricted deletion flag;
 these are flag use in open() system call when we tried to create file .these flags manages all of permition of file.some of i used in code.
   
    
+ Data structure used :
  
+ hash is used for storing files.each file name is unique .
+ 
+ ![Screenshot from 2021-03-13 19-40-21](https://user-images.githubusercontent.com/60652468/111032860-568a4480-8434-11eb-9fe3-4ab666b714b3.png)
+ 
+ and free memory mentain using link list ,that list contain free memory address according to ascending order of block position
+ 
+ ![Screenshot from 2021-03-13 19-41-54](https://user-images.githubusercontent.com/60652468/111032918-aa952900-8434-11eb-8d0c-0ef52c920b5f.png)
+
+
