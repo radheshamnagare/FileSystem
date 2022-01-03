@@ -94,3 +94,18 @@ these are flag use in open() system call when we tried to create file .these fla
  ![Screenshot from 2021-03-13 19-41-54](https://user-images.githubusercontent.com/60652468/111032918-aa952900-8434-11eb-8d0c-0ef52c920b5f.png)
 
 
+
+# How to run app
+- Either fork or download appliaction
+- Make sure you have install c language
+- compiling disk.c `gcc disk.c -o filesys`
+- run `./filesys`
+- We will see the options like copy ,delete,list,paste
+
+# Featues
+- Long file can copy
+- Different type of file can copy
+
+# Future features
+- Can copy multiple files at currerently
+- Can paste mutliple files
